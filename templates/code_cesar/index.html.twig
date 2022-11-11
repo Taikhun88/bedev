@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Code Cesar - Tainix PHP Challenges{% endblock %}
+
+{% block body %}
+<div class="m-5">
+    <h5><a href="{{ absolute_url('https://tainix.fr/challenge/Code-Cesar') }}">Code Cesar challenge PHP - Tainix</a></h5>
+
+    <div class="">
+        <img class="img-fluid w-75" src="{{ asset('images/schemas-challenge/code-cesar.jpg') }}" alt="">
+
+        <p>Décalage : {{ decalage }}</p>
+        <p>Mot crypté : {{ mot_crypte }}</p>
+        <p>Mot décrypté : {{ mot_decrypte }}</p>
+
+    </div>
+</div>
+{% endblock %}

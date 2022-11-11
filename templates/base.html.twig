@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}BEDEV
+			{% endblock %}
+		</title>
+		{# webpack ENCORE a été intégré au projet #}
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link rel="stylesheet" href="/css/styles.css">
+		{% endblock %}
+	</head>
+
+	<body>
+		{% block body %}
+			{% include "home/partials/_navbar.html.twig" %}
+			<main>
+				{% block content %} {% endblock %}
+
+				{% block javascripts %}	{{ encore_entry_script_tags('app') }} {% endblock %}
+			</main>
+		{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Batman et IA - Tainix PHP Challenges{% endblock %}
+
+{% block body %}
+<div class="w-100 m-5">
+    <h5><a href="{{ absolute_url('https://tainix.fr/challenge/Batmobile-et-IA') }}">Batman et IA challenge PHP - Tainix</a></h5>
+
+    <div>
+        <img class="img-fluid w-75" src="{{ asset('images/schemas-challenge/batman-ia.jpg') }}" alt="">
+        <p class="wrapDataXandPv w-75">{{ dataToEliminate }}</p>
+    </div>
+</div>
+{% endblock %}
