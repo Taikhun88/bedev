@@ -14,4 +14,4 @@
     Il faut enfin installer le sass loader
     Se référer à cette source si besoin 
     https://yoandev.co/bootstrap-5-avec-symfony-5-et-webpack-encore/
-    
+    # bedev
